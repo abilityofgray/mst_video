@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+  <main>
+    <section class="video">
+      <div class="video__wrap">
+        
+      </div>
+      <video class="mask-text" src="./asset/video/video.mp4" loop autoplay muted playsinline>
+      </video>
+      
+      <picture>
+        <source media="(max-width: 768px)" srcset="./asset/mask/layer_text_768.png">
+        <source media="(min-width: 769px)" srcset="./asset/mask/layer_text.png">
+        <img class="mask__text1" src="./asset/mask/layer_text.png" alt=""> 
+      </picture>
+      
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+
+body {
+  background: #000000;
+}
+video {
+  max-width: 100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+@media (min-width: 320px) and (max-width: 770px) {
+  video {
+    max-width: 175%;
+  }
+}
+.mask {
+  clip-path: circle(35% at 60% 40%);
+}
+.mask-text {
+  
+  mask-image: url('./asset/mask/layer_rect.png');
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  
+}
+
+@media (min-width: 320px) and (max-width: 770px) {
+  .mask-text {
+    mask-image: url('./asset/mask/layer_rect_768.png');
+  }
+}
+.mask-thumb {
+  mask-image: linear-gradient(to bottom, #000, #000),
+  linear-gradient(to bottom, #000, #000),
+  linear-gradient(to bottom, #000, #000),
+  linear-gradient(to bottom, #000, #000),
+  linear-gradient(to bottom, #000, #000);
+  mask-size: 30% 10%;
+  mask-position: 0 100%, 25% 25%, 50% 50%, 75% 0, 100% 50%;
+  mask-repeat: no-repeat;
+}
+.text {
+  color: #ffffff;
+  font-size: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.testing__text {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.mask__rect {
+  display: inline-block;
+  
+  clip-path: circle(35% at 60% 40%);
+}
+.estate {
+  background-image: url('./asset/textPS.png');
+}
+.mask__text1 {
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
